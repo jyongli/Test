@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- 拦截器定义 -->
+    <type name="Test\Test\Controller\Interceptor\Example">
+        <plugin name="Test_Test_Plugin" type="Test\Test\Plugin\ExamplePlugin" sortOrder="1" disabled="false"  />
+    </type>
+</config>

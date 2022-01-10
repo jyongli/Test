@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <!-- 在这个文件中，在 config 元素下，我们定义了一个事件元素，其名称是上面调度的事件名称。将执行此事件的类将通过实例属性在观察者元素中定义。观察者的名称用于将其与此事件的其他观察者进行识别。有了这个events.xml文件，Magento将在前端区域调用此事件的调度方法时执行Test\Test\Observer\ChangeDisplayText类。 -->
+    <event name="test_test_display_text">
+        <observer name="mp_display_text" instance="Test\Test\Observer\ChangeDisplayText" />
+    </event>
+</config>
