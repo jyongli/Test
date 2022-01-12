@@ -3,6 +3,9 @@
 echo "<pre>";
 ?>
 <div class="testdiv">
-    <h1>测试模板</h1>
-    <p><?= print_r($block->getData()); ?></p>
+    <div>
+        <h1>测试模板</h1>
+        <!-- 要注意\<\?\= 用print_r输出时会带1结尾，但数据是正常的，可以用来传值，只是输出时会带1而已。 -->
+        <p><?= var_dump($block->getData());?></p>
+    </div>
 </div>

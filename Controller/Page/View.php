@@ -6,6 +6,7 @@ use Magento\Framework\App\Action\Action;
 use Magento\Framework\Controller\ResultFactory;
 use Magento\Framework\View\Element\Template;
 use Magento\Framework\View\Result\Page;
+
 /**
  * Send data from controller to phtml
  */
